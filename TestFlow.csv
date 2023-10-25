@@ -1,0 +1,4 @@
+C++ Function ,Enabled,Optional Input Arguments,Test Flow,Input Voltage,Temperature,
+test_function1,Yes,Test Flow=Final Test;Input Voltage=5;Temperature=25,Final Test,5,25,
+test_function2,Yes,Test Flow=Probe;Input Voltage=5;Temperature=25,Probe,5,25,
+test_function3,Yes,Test Flow=Final Test;Input Voltage=5;Temperature=25,Final Test,5,25,
