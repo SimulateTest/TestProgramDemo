@@ -3,6 +3,7 @@
 
 #include "framework.h"
 #include "TesterDemo.h"
+#include "Settings.h"
 #include <shellapi.h>  // For ShellExecute
 #include <fstream>
 #include <sstream>
@@ -185,7 +186,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 {
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
-
+    STS_LoadSettings(STS_USER_KEY, STS_HOSTNAME);
     // TODO: Place code here.
     LOGFONT lf = { 0 };
     lf.lfHeight = 18;  // Height of the font. Adjust as needed.

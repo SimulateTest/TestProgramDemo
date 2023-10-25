@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="TesterDemo">
+      <UniqueIdentifier>{81e8079e-ec13-498f-bed3-39a7b1f65614}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -27,22 +30,25 @@
     <ClInclude Include="TestProgramDemo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TesterDemo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Tester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="WrapperMessageHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TesterDemo.h">
+      <Filter>TesterDemo</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="TesterDemo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="TestProgram.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TesterDemo.cpp">
+      <Filter>TesterDemo</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

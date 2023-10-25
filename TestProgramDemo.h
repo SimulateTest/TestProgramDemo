@@ -2,4 +2,5 @@
 
 #include "resource.h"
 
+#include "Settings.h"
 #include "WrapperMessageHandler.h"
