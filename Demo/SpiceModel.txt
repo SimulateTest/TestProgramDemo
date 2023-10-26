@@ -1,0 +1,42 @@
+.subckt BuckConverter 1 2 3 4 5 6 8 9 10 13 14 18 21 22 23
+
+* PINOUT ORDER  1   2   3    4    5  6  7   8   9   10  11   12  13   14   15    16   17  18   19    20     21     22     23
+* PINOUT ORDER VIN VIN PGND PGND LX LX BST PG ADR0 ADR1 SCL SDA PGND AGND COMP OUTSNS EN VDDA VDDP VINLDO VIN_EP PGND_EP LX_EP
+* 
+* ADR0 > 1.5V will turn on HS fet
+* ADR1 > 1.5V will turn on LS fet
+*
+* Bondwires
+R1 1 VIN 1m
+R2 2 VIN 1m
+R3 21 VIN 1m
+R4 3 PGND 1m
+R5 4 PGND 1m
+R6 13 PGND 1m
+R7 22 PGND 1m
+R8 5 LX 1m
+R9 6 LX 1m
+R10 23 LX 1m
+R11 9 ADR0 1m
+R12 10 ADR1 1m
+R13 14 AGND 1m
+R14 8 PG 1m
+R15 18 VDDA 1m
+
+*IQ
+R_IQ VDDA AGND 3000
+
+* PG, if VDDA is > 4V PG is up
+E_PG PG AGND VALUE={IF(V(VDDA,AGND)>4.0, 3.3, 0)}
+
+* MOSFETs modeled as switches
+S1 VIN LX Control1 AGND smodel
+S2 LX PGND Control2 AGND smodel
+
+* Voltage sorce to turn on switches
+V1 Control1 AGND VALUE={IF(V(ADR0,AGND)>1.5, 5, 0)}
+V2 Control2 AGND VALUE={IF(V(ADR1,AGND)>1.5, 5, 0)}
+
+.model smodel VSWITCH (roff=1000000 ron=0.250 voff = 0 von = 2.0)
+
+.ends
