@@ -18,7 +18,7 @@ This demo showcases a Test Program that simulates a typical Automated Test Equip
 
    WRAP_API void STS_LoadSettings(const char* key, const char* hostname);
    ```
-   4. **File Upload**: Transfer the 4 designated files from this project's `Demo` directory to the drop box on the [Simulate Test homepage](https://app.simulatetest.com). The files include:
+4. **File Upload**: Transfer the 4 designated files from this project's `Demo` directory to the drop box on the [Simulate Test setup page](https://app.simulatetest.com). The files include:
    - `Schematic.PDF`
    - `IPC2581.xml`
    - `Tester1_PinMapping.xlsx`
