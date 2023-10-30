@@ -18,10 +18,11 @@ This demo showcases a Test Program that simulates a typical Automated Test Equip
 
    WRAP_API void STS_LoadSettings(const char* key, const char* hostname);
    ```
-4. **File Upload**: Transfer the 4 designated files from this project's `Demo` directory to the drop box on the [Simulate Test setup page](https://app.simulatetest.com). The files include:
+4. **File Upload**: Transfer the 5 designated files from this project's `Demo` directory to the drop box on the [Simulate Test setup page](https://app.simulatetest.com). The files include:
    - `Schematic.PDF`
    - `IPC2581.xml`
-   - `Tester1_PinMapping.xlsx`
+   - `PinMapping.xlsx`
+   - `Instruments.xlsx`
    - `DUT_Info.xlsx`
 5. **ATE Simulation**: On the website, navigate to the "ATE Simulation" section.
 6. **Execution**: Launch the Visual Studio project. Once started, click on "Load Lot" followed by "Test".
